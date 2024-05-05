@@ -1,0 +1,227 @@
+/* Defaults */
+* {
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+header a {
+    color: rgba(0, 0, 128, 0.7) !important;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 1px 8px;
+    border: 4px solid rgba(0, 0, 128, 0.7) !important;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+
+header a:hover {
+    color: rgba(0, 0, 0, 0.8)!important;
+    border-radius: 50px;
+    border-color: rgba(0, 0, 0, 0.8) !important;
+    transition: all 0.3s ease 0s;
+}
+
+
+body {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Headers and Text Sizing */
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 4rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.wrapper p, .wrapper ul li {
+    font-size: 1.5rem;
+}
+
+.wrapper h4 {
+    font-size: 2rem;
+    padding: 3rem 0;
+}
+
+.section-hero p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header nav span {
+    font-size: 2.5rem;
+}
+
+/* Layout */
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.section-content, .hero-content {
+    width: 100vw;
+    height: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.section-hero p {
+    padding: 3rem 0;
+}
+
+.hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('brick_wall.png');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    min-height: 400px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.container .wrapper {
+    flex: 1;
+    margin: 0 1rem;
+}
+
+.container .wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+hr {
+    width: 100vw;
+    max-width: 1600px;
+    margin: 2rem auto;
+    border: 4px solid navy;
+}
+
+/* Footer */
+footer {
+    flex: 1;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    hr {
+        margin: 2rem auto 0 auto;
+    }
+
+    header {
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+
+    header nav {
+        padding: 0 0.5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        padding: 1rem 0;
+    }
+
+    .wrapper p, .wrapper ul li {
+        font-size: 1.2rem;
+    }
+
+    .wrapper h4 {
+        font-size: 1.5rem;
+        padding: 2rem 0;
+    }
+
+    .section-hero p {
+        font-size: 1.5rem;
+    }
+
+    main {
+        height: auto;
+    }
+
+    .hero-image {
+        height: 40vh;
+    }
+    
+    .container .wrapper {
+        margin: 0;
+    }
+
+    footer {
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+
+    .section-content {
+        padding: 0 1rem;
+    }
+
+    .section-content .container img {
+        margin-bottom: 1rem;
+    }
+
+    .section-content .container {
+        flex-flow: column;
+    }
+
+    .section-content#masonry .container {
+        flex-flow: column-reverse;
+    }
+}
