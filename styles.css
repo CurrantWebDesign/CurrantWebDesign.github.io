@@ -113,7 +113,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('brick_wall.png');
+    background-image: url('images/brick_wall.png');
     background-size: cover;
     background-position: center;
     height: 60vh;
